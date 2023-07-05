@@ -7,7 +7,9 @@ if [$ID ne 0]; then
 
 fi
 echo "Installaing Nginx"
+
 yum install nginx -y &>> "/tmp/${COMPONENT}.log"
+
 if [$? -eq 0] ; then 
    echo "Success"
 else 
