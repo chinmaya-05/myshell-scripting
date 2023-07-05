@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "I am frontend"
+echo "Installaing Nginx"
+yum install nginx -y 
