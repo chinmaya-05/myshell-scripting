@@ -39,3 +39,8 @@ mv static/* . &>> "/tmp/$.{COMPONENT}.log"
 rm -rf frontend-main 
 mv localhost.conf /etc/nginx/default.d/roboshop.conf
 stats $?
+
+echo "starting services"
+systemctl enable nginx
+start nginx
+stats $?
