@@ -16,4 +16,6 @@ else
    echo "Failed"
 fi
 
+echo -n "Down;oadiong the front end componenet "
+curl -s -L -o /tmp/frontend.zip "# curl -s -L -o /tmp/frontend.zip "https://github.com/stans-robot-project/frontend/archive/main.zip""
 #if script is executed or as a sudo user then it ha sto proceed , if not I want to exit teh script with soem message
