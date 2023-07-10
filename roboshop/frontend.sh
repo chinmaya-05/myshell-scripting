@@ -7,7 +7,7 @@ if [ $ID -ne 0 ]; then
 
 fi
 stats(){
-if [ $1? -eq 0 ] ; then 
+if [ $? -eq 0 ] ; then 
    echo "Success"
 else 
    echo "Failed"
@@ -30,4 +30,9 @@ stats $1?
 echo -n "Performing cleaning up"
 cd /usr/share/nginx/html
 rm -rf * &>> "/tmp/${COMPONENT}.log"
-stats $1?
+stats $?
+
+echo -n "Extracting ${COMPONENT}"
+unzip /tmp/frontend.zip &>> "/tmp/$.{COMPONENT}.log
+ mv static/* .
+ 
