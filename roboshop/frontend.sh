@@ -42,5 +42,5 @@ stats $?
 
 echo "starting services"
 systemctl enable nginx
-start nginx
+systemctl start nginx
 stats $?
