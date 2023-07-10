@@ -7,7 +7,7 @@ if [ $ID -ne 0 ]; then
 
 fi
 stats(){
-if [ $1 -eq 0 ] ; then 
+if [ $1? -eq 0 ] ; then 
    echo "Success"
 else 
    echo "Failed"
