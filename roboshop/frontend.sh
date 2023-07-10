@@ -33,8 +33,9 @@ rm -rf * &>> "/tmp/${COMPONENT}.log"
 stats $?
 
 echo -n "Extracting ${COMPONENT}"
-unzip /tmp/frontend.zip &>> "/tmp/$.{COMPONENT}.log
-mv static/* .
-rm -rf frontend-main README.md
+unzip /tmp/frontend.zip &>> "/tmp/$.{COMPONENT}.log"
+mv $COMPONENT-main/* .
+mv static/* . &>> "/tmp/$.{COMPONENT}.log"
+rm -rf frontend-main 
 mv localhost.conf /etc/nginx/default.d/roboshop.conf
-stats $1?
+stats $?
