@@ -21,7 +21,7 @@ yum install nginx -y &>> "/tmp/${COMPONENT}.log"
 stats $1?
 
 echo -n "Downloadiong the front end componenet "
-curl -s -L -o /tmp/frontend.zip "# curl -s -L -o /tmp/frontend.zip "https://github.com/stans-robot-project/frontend/archive/main.zip""
+curl -s -L -o /tmp/frontend.zip   "https://github.com/stans-robot-project/frontend/archive/main.zip"
 #if script is executed or as a sudo user then it ha sto proceed , if not I want to exit teh script with soem message
 
 stats $1?
@@ -35,4 +35,3 @@ stats $?
 echo -n "Extracting ${COMPONENT}"
 unzip /tmp/frontend.zip &>> "/tmp/$.{COMPONENT}.log
  mv static/* .
- 
